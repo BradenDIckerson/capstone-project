@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Audiowide', cursive;
+    background-image:"https://media.istockphoto.com/photos/old-wood-background-picture-id465559373?b=1&k=20&m=465559373&s=170667a&w=0&h=BZPul6FFHu3JFGzKUXXeCAIsaIWIpTELsVq9nkw74OQ=";
+}
+
+h1 {
+    padding: 10px;
+    width: 100vw;
+    text-align: center;
+    background-color: rgb(0, 255, 234);
+    color: rgb(255, 238, 0);
+    margin-bottom: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+}
+
+button {
+    color: rgb(0, 0, 0);
+    background-color: rgb(250, 250, 250);
+    font-size:larger;
+    position: relative;
+    left: 600px;
+}
+
