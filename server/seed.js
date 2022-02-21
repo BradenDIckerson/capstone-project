@@ -46,15 +46,16 @@ module.exports = {
 
         CREATE TABLE menu_tag_junction(
             menu_tag_junction_id serial primary key,
-            item_tags_id INT PRIMARY KEY,
-            menu_item_id INT PRIMARY KEY
+            item_tags_id INT REFERENCES item_tags(item_tags_id),
+            menu_item_id INT REFERENCES menu_items(menu_item_id)
         );
 
-            insert into menu_items (item_name, in_stock, price, is_vegan, is_gluten_free)
-            values('Hamburger', True, '$4.99', False, False),
-                ('Hotdog', False, '$2.99', False, True),
-                ('Salad', True, '$3.99', True, True),
-                ('Ice Cream Cone', True, '$1.99', True, True);
+        insert into menu_items (item_name, in_stock, price, is_vegan, is_gluten_free)
+        values('Hamburger', True, 4.99, False, False),
+            ('Hotdog', False, 2.99, False, True),
+            ('Salad', True, 3.99, True, True),
+            ('Ice Cream Cone', True, 1.99, True, True),
+            ('Iced Tea', True, 1.99, True, True);
 
             insert into locations(address, city, state)
             values('4246 Allens St', 'Stokesville', 'Arizona'),
@@ -69,6 +70,17 @@ module.exports = {
                 ('appatiser'),
                 ('combo');
             
+            insert into menu_tag_junction(item_tags_id, menu_item_id)
+              values(6, 1),
+              (1, 1),
+              (6, 2),
+              (2, 3),
+              (6, 3),
+              (5, 3),
+              (4, 4),
+              (6, 4),
+              (3, 5),
+              (6, 5);
             
 
         

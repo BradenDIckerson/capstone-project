@@ -1,9 +1,12 @@
-* {
+body {
     padding: 0;
     margin: 0;
     font-family: 'Audiowide', cursive;
     background-image: url("https://media.istockphoto.com/photos/old-wood-background-picture-id465559373?b=1&k=20&m=465559373&s=170667a&w=0&h=BZPul6FFHu3JFGzKUXXeCAIsaIWIpTELsVq9nkw74OQ=");
-    background-color: black;
+    background-position:px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 h1 {
@@ -11,11 +14,13 @@ h1 {
     width: 100vw;
     text-align: center;
     background-image: url("https://images.unsplash.com/photo-1530550912241-cd4506bfc27d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dHJhdmVsaW5nJTIwdmFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
-    background-color: chartreuse;
     color: rgb(255, 238, 0);
     margin-bottom: 20px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 button {
@@ -26,3 +31,12 @@ button {
     left: 600px;
 }
 
+img {
+    position: relative;
+    left: 550px;
+    top: 150px;
+    padding: 5px;
+    
+
+
+}

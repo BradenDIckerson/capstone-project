@@ -8,17 +8,17 @@ const {seed} = require('./seed')
 
 app.use(cors())
 app.use(express.json())
-
+app.use(express.static('public'))
 
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../index.html'))
+    res.sendFile(path.join(__dirname, '../public/index.html'))
 })
 
 
 app.post('/api/seed', seed)
 
-
+app.get('/api/locations')
 
 
 
