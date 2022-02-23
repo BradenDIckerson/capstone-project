@@ -12,7 +12,7 @@ const sequelize = new Sequelize(CONNECTION_STRING, {
     },
   },
 });
-
+ 
 module.exports = {
   seed: (req, res) => {
     sequelize
