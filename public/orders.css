@@ -20,18 +20,23 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 button {
-  color: rgb(0, 0, 0);
-  background-color: rgb(250, 250, 250);
-  font-size: larger;
-  position: relative;
-  left: 600px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(250, 250, 250);
+    font-size: larger;
+    position: relative;
+    left: 600px;
+  }
+
+#get-full-menu {
+background-color: blue;
 }
 
-img {
-  position: relative;
-  left: 550px;
-  top: 150px;
-  padding: 5px;
+
+#tag-name {
+background-color: aqua;
+}
+
+#menu-display {
+    background-color: aquamarine;
 }

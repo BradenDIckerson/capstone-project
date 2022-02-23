@@ -1,6 +1,12 @@
 const locationSelect = document.querySelector("#location-select");
 const addressDisplay = document.querySelector("#address-display");
 
+function removeAllChildNodes(parent) {
+  while (parent.firstChild) {
+    parent.removeChild(parent.firstChild);
+  }
+}
+
 window.addEventListener("DOMContentLoaded", () => {
   //your logic goes here i.e the axios call to get all locations
   axios
@@ -20,14 +26,15 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 locationSelect.addEventListener("change", (event) => {
-  const address = document.createElement("p");
+  removeAllChildNodes(addressDisplay);
+  const paragraph = document.createElement("p");
   // console.log(event.target.value)
   const state = event.target.value;
   axios.get(`http://localhost:5687/api/location/${state}`).then((res) => {
     const { address } = res.data[0];
-    console.log(res.data[0].address);
-    address.setAttribute()
-    address.textContent = `${res.data[0]}`;
-    addressDisplay.appendChild(address);
+    // console.log(res.data[0].address);
+    // console.log(address);
+    paragraph.textContent = address;
+    addressDisplay.appendChild(paragraph);
   });
 });
