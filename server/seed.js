@@ -12,7 +12,7 @@ const sequelize = new Sequelize(CONNECTION_STRING, {
     },
   },
 });
- 
+
 module.exports = {
   seed: (req, res) => {
     sequelize
@@ -55,7 +55,10 @@ module.exports = {
             ('Hotdog', False, 2.99, False, True),
             ('Salad', True, 3.99, True, True),
             ('Ice Cream Cone', True, 1.99, True, True),
-            ('Iced Tea', True, 1.99, True, True);
+            ('Iced Tea', True, 1.99, True, True),
+            ('Gyro', False, 3.99, False, False),
+            ('Soda', True, 1.99, False, False),
+            ('churro', True, 2.99, False, False);
 
             insert into locations(address, city, state)
             values('4246 Allens St', 'Stokesville', 'Arizona'),
@@ -76,11 +79,14 @@ module.exports = {
               (6, 2),
               (2, 3),
               (6, 3),
-              (5, 3),
+              (5, 3), 
               (4, 4),
               (6, 4),
               (3, 5),
-              (6, 5);
+              (6, 5),
+              (1, 6),
+              (3, 7),
+              (4, 8);
             
 
         

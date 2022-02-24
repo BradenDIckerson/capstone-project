@@ -25,7 +25,18 @@ h2 {
   padding: 10px;
   width: 100vw;
   text-align: center;
-  font-family: ;
+  color: rgb(255, 153, 0);
+  text-shadow: 200px;
+}
+
+h3{
+  padding: 10px;
+  width: 90vw;
+  text-align: center;
+  color: rgb(219, 219, 19);
+  background-color: rgba(0, 0, 0, 0.24);
+  position: relative;
+  left: 50px;
 }
 
 button {
@@ -33,12 +44,13 @@ button {
   background-color: rgb(250, 250, 250);
   font-size: larger;
   position: relative;
-  left: 600px;
+  left: 725px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 img {
   position: relative;
   left: 550px;
-  top: 150px;
+  top: 0px;
   padding: 5px;
 }
