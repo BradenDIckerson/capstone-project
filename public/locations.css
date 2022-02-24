@@ -25,11 +25,31 @@ button {
   background-color: rgb(250, 250, 250);
   font-size: larger;
   position: relative;
-  left: 600px;
+  left: 725px;
 }
 img {
   position: relative;
-  left: 550px;
-  top: 150px;
+  left: 450px;
+  top: px;
   padding: 5px;
+  block-size: 500px;
+}
+
+#address-display {
+    position: relative;
+    bottom: 500px;
+    left: 50px;
+    color: rgb(244, 255, 86);
+}
+
+#location-select {
+    position: relative;
+    left: 50px;
+
+}
+
+label {
+    position: relative;
+    left: 50px;
+    color: rgb(253, 245, 123);
 }
