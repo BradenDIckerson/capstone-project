@@ -46,6 +46,7 @@ button {
   position: relative;
   left: 725px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  align-self: center;
 }
 
 img {
@@ -53,4 +54,6 @@ img {
   left: 550px;
   top: 0px;
   padding: 5px;
+  max-width: 100%;
+  height: auto;
 }

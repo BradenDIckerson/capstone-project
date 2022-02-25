@@ -46,8 +46,8 @@ background-color: rgba(116, 163, 147, 0.288);
 position: relative;
 padding: 10px;
 width: 100vw;
-text-align: center;
+text-align:left;
 margin-bottom: 20px;
 font-size: 25px;
-
+left: 100px;
 }
